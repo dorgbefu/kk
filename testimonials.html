@@ -1,0 +1,189 @@
+<html><head>
+<meta charset="utf-8">
+<title>Feed Back</title>
+<style>
+.new-heading{font-size:18px;color:#09C;padding-bottom:10px;font-family:Arial, Helvetica, sans-serif;font-weight:bold;}
+.report{color:#666;font-size:14px;padding:10px;background:#fff;border:1px solid #eee;}
+.report input[type="text"],.report input[type="email"],.report input[type="file"],.report select,.report textarea{width:100%;padding:5px 8px;border:1px solid #e4e4e4;box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-ms-box-sizing:border-box;-o-box-sizing:border-box;resize:vertical;border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;-o-border-radius:5px;-ms-border-radius:5px;}
+.report input[type="submit"]{background:#09C;color:#fff;padding:8px 40px;font-size:18px;border:none;border-radius:5px;-moz-border-radius:5px;-ms-border-radius:5px;-o-border-radius:5px;-webkit-border-radius:5px;cursor:pointer;}
+.report .form{display:block;padding-bottom:8px;font-family:Arial, Helvetica, sans-serif;font-size:14px;}
+.form .small{font-size:12px;color:#C60;}
+.report label{padding:3px 0;display:block;}
+.report textarea{min-height:100px;}
+</style>
+<script language="javascript">
+
+function AlertFilesize(cid,sz,a){
+    var controllerID = cid;
+    var fileSize = sz;
+    var extation = a;
+    if(window.ActiveXObject){
+        var fso = new ActiveXObject("Scripting.FileSystemObject");
+        var filepath = document.getElementById('fileInput').value;
+        var thefile = fso.getFile(filepath);
+        var sizeinbytes = thefile.size;
+    }else{
+        var sizeinbytes = document.getElementById('fileInput').files[0].size;
+    }
+    var fSExt = new Array('Bytes', 'KB', 'MB', 'GB');
+    fSize = sizeinbytes; i=0;while(fSize>900){fSize/=1024;i++;}
+    var fup = document.getElementById('fileInput');
+    var fileName = fup.value;
+    var ext = fileName.substring(fileName.lastIndexOf('.') + 1);
+    if(ext == "gif" || ext == "GIF" || ext == "JPEG" || ext == "jpeg" || ext == "jpg" || ext == "JPG" || ext == "png" || ext == "PNG")
+    {   
+        var fs = Math.round(fSize);
+        if(fs < fileSize && fSExt[i] == extation)
+        {
+            //alert("Image Successfully Uploaded");
+            return true;}else{
+            alert("Please enter the image size less then"+fileSize+extation);
+            document.getElementById('fileInput').value='';
+            return false;
+            }
+        }else{
+        alert("Must be jpg and gif images ONLY");
+        document.getElementById('fileInput').value='';
+        return false;}
+    }
+</script>
+
+</head>
+
+
+
+
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
+		
+		<title>Kings Consult-COMPANY</title>
+		<!-- Loading third party fonts -->
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,600,700" rel="stylesheet" type="text/css">
+		<link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
+		<!-- Loading main css file -->
+		<link rel="stylesheet" href="css/animate.min.css">
+		<link rel="stylesheet" href="style.css">
+		
+		<!--[if lt IE 9]>
+		<script src="js/ie-support/html5.js"></script>
+		<script src="js/ie-support/respond.js"></script>
+		<![endif]-->
+
+	</head>
+
+	<body>
+		
+		<div id="site-content">
+			
+			<header class="site-header wow fadeInDown">
+				<div class="container">
+					<div class="header-content">
+						<div class="branding">
+							<img src="images/logo.png" alt="Company Name" class="logo">
+							<h1 class="site-title"><a href="index.html">KINGS CONSULTS</a></h1>
+							<small class="site-description">WE SERVE YOU BETTER</small>
+						</div>
+						
+						<nav class="main-navigation">
+							<button type="button" class="menu-toggle"><i class="fa fa-bars"></i></button>
+							<ul class="menu">
+								<li class="menu-item"><a href="about-us.html">About us</a></li>
+								<li class="menu-item"><a href="our-offer.html">Our Offers</a></li>
+								<li class="menu-item"><a href="customer-protection.html">Customer Protection</a></li>
+								<li class="menu-item current-menu-item"><a href="contact.html">Contact us</a></li>
+							</ul>
+						</nav>
+						
+						<div class="social-links">
+							<a href="https://www.facebook.com/profile.php?id=100087592984880" class="facebook"><i class="fa fa-facebook"></i></a>
+							<a href="https://twitter.com/dekingsconsult?t=gdQez42A0s9WUeBOF7vCnQ&s=09" class="twitter"><i class="fa fa-twitter"></i></a>
+							<a href="https://youtube.com/channel/UCm-0nxu9DtvqDaHpfbWqB2A" class="youtube"><i class="fa fa-youtube"></i></a>
+							<a href="https://t.me/kingsTravelConsult" class="telegram"><i class="fa fa-telegram"></i></a>
+							<a href="https://www.instagram.com/invites/contact/?i=16y86go36lbod&utm_content=pvpql6a" class="instagram"><i class="fa fa-instagram"></i></a>
+						
+						
+						
+						<script src="https://kit.fontawesome.com/74206248de.js" crossorigin="anonymous"></script>
+						</div>
+					</div>
+					<nav class="breadcrumbs">
+						<a href="index.html">Home</a> &rarr;
+						<span>FEEDBACK</span>
+					</nav>
+				</div>
+			</header> <!-- .site-header -->
+
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body marginwidth="0" marginheight="0">
+<div class="report">
+<form method="POST" action="" accept-charset="UTF-8" enctype="multipart/form-data">
+<div class="new-heading">Add New Testimonials</div>
+<div class="form">
+<input type="text" placeholder="Name" name="name" required="" value="">
+</div>
+<div class="form">
+<input type="email" placeholder="Email" required="" name="email" value="">
+</div>
+<div class="form">
+<input type="text" placeholder="Contact Number With Country Code" name="phonenumber" required="" value="">
+
+</div>
+
+<div class="form">
+<select name="subject" required="">
+<option value="">Select you are</option>
+<option value="1">Student</option><option value="2">Institution</option><option value="3">Agents</option><option value="4">Others</option>
+</select>
+</div>
+
+<div class="form">
+<textarea placeholder="Leave your message here" required="" name="message"></textarea>
+</div>
+<div class="form">
+Upload your pic <span class="small">(max file size 250kb)</span>
+</div>
+<div class="form">
+<input id="fileInput" type="file" onchange="AlertFilesize(this.id,250,'KB');" name="fileToUpload">
+</div>
+
+<div class="form">
+<input type="submit" action="mailto: kingstravelconsult@gmail.com" value="Send" name="sendfeedback" action="mailto: kingstravelconsult@gmail.com">
+</div>
+</form>
+
+</div>
+
+
+<div class="social-links">
+							<a href="https://www.facebook.com/profile.php?id=100087592984880" class="facebook"><i class="fa fa-facebook"></i></a>
+							<a href="https://twitter.com/dekingsconsult?t=gdQez42A0s9WUeBOF7vCnQ&s=09" class="twitter"><i class="fa fa-twitter"></i></a>
+							<a href="https://youtube.com/channel/UCm-0nxu9DtvqDaHpfbWqB2A" class="youtube"><i class="fa fa-youtube"></i></a>
+							<a href="https://t.me/kingsTravelConsult" class="telegram"><i class="fa fa-telegram"></i></a>
+							<a href="https://www.instagram.com/invites/contact/?i=16y86go36lbod&utm_content=pvpql6a" class="instagram"><i class="fa fa-instagram"></i></a>
+						</div>
+																					<i class="fa fa-telegram" aria-hidden="true"></i>
+</body></html>
