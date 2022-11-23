@@ -2080,6 +2080,7 @@ body {
   background: white;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+  height: 0px;
   *zoom: 1;
 }
 .site-header .header-content:after {
